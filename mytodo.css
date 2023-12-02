@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background-color: burlywood;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.list {
+    position: relative;
+    background: rgb(4, 97, 100);
+    width: 400px;
+}
+
+.list h2 {
+    background-color: crimson;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 900;
+    font-style: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid black;
+    border-left: solid black;    
+    border-right: solid black;
+}
+
+.list ul {
+    position: relative;
+    padding: 15px 30px;
+    border-bottom: solid black;
+    border-top: solid black ;
+    border-left: solid black;
+    border-right: solid black;
+   
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+.list ul li label p
+{
+    position: relative;
+    font-family: monospace;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.list ul li label input:checked ~ p
+{
+    text-decoration: line-through;
+    color: brown;
+}
